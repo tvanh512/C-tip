@@ -1,0 +1,2 @@
+Compile multiple C++ file
+g++ -o prog file1.cpp file2.cpp file3.cpp
