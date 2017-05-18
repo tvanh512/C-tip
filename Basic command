@@ -1,3 +1,10 @@
 std::cout << x; is an output statement. It outputs the value of x (which we set to 5 in the previous statement) to the screen.
 The << symbol is an operator (much like + is an operator in mathematics) called the output operator.
 std::cout understands that anything sent to it via the output operator should be printed on the screen. 
+
+Line 6 is a new type of statement, called a return statement. 
+When an executable program finishes running, the main() function sends a value back to the operating system that indicates
+whether it was run successfully or not.
+
+This particular return statement returns the value of 0 to the operating system, which means “everything went okay!”.
+Non-zero numbers are typically used to indicate that something went wrong, and the program had to abort
