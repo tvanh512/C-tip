@@ -10,7 +10,6 @@ whether it was run successfully or not.
 
 std::cin is the opposite of std::cout -- whereas std::cout prints data to the console using the output operator (<<), 
 std::cin reads input from the user at the console using the input operator (>>).
-<code>
 #include <iostream>
  
 int main()
@@ -22,6 +21,5 @@ int main()
     return 0;
 }
 
-</code>
 return 0; This particular return statement returns the value of 0 to the operating system, which means “everything went okay!”.
 Non-zero numbers are typically used to indicate that something went wrong, and the program had to abort
