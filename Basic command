@@ -2,11 +2,26 @@ std::cout << x; is an output statement. It outputs the value of x (which we set 
 The << symbol is an operator (much like + is an operator in mathematics) called the output operator.
 std::cout understands that anything sent to it via the output operator should be printed on the screen. 
 
-<< std::endl  similar to \n ( has a little difference).
+When used with std::cout, std::endl inserts a newline character (causing the cursor to go to the start of the next line).
 
 Line 6 is a new type of statement, called a return statement. 
 When an executable program finishes running, the main() function sends a value back to the operating system that indicates
 whether it was run successfully or not.
 
+std::cin is the opposite of std::cout -- whereas std::cout prints data to the console using the output operator (<<), 
+std::cin reads input from the user at the console using the input operator (>>).
+<code>
+#include <iostream>
+ 
+int main()
+{
+    std::cout << "Enter a number: "; // ask user for a number
+    int x; // no need to initialize x since we're going to overwrite that value on the very next line
+    std::cin >> x; // read number from console and store it in x
+    std::cout << "You entered " << x << std::endl;
+    return 0;
+}
+
+</code>
 return 0; This particular return statement returns the value of 0 to the operating system, which means “everything went okay!”.
 Non-zero numbers are typically used to indicate that something went wrong, and the program had to abort
