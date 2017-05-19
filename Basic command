@@ -24,3 +24,5 @@ int main()
 
 return 0; This particular return statement returns the value of 0 to the operating system, which means “everything went okay!”.
 Non-zero numbers are typically used to indicate that something went wrong, and the program had to abort
+
+int prime[5] = { 2, 3, 5, 7, 11 };
