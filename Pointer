@@ -1,0 +1,17 @@
+Dereferencing pointers
+
+Once we have a pointer variable pointing at something, the other common thing to do with it is dereference the pointer
+to get the value of what it’s pointing at. A dereferenced pointer evaluates to the contents of the address it is pointing to.
+int value = 5;
+std::cout << &value; // prints address of value
+std::cout << value; // prints contents of value
+ 
+int *ptr = &value; // ptr points to value
+std::cout << ptr; // prints address held in ptr, which is &value
+std::cout << *ptr; // dereference ptr (get the value that ptr is pointing to)
+The above program prints:
+
+0012FF7C
+5
+0012FF7C
+5
