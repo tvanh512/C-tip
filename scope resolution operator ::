@@ -1,0 +1,29 @@
+:: is known as the scope resolution operator. The names cout and cin are defined within std, so we have to qualify their names with std::.
+
+Classes behave a little like namespaces in that the names declared inside the class belong to the class. For example:
+
+class foo
+{
+  public:
+    foo();
+    void bar();
+};
+The constructor named foo is a member of the class named foo. They have the same name because its the constructor. The function bar is also a member of foo.
+
+Because they are members of foo, when referring to them from outside the class, we have to qualify their names. After all, they belong to that class. So if you're going to define the constructor and bar outside the class, you need to do it like so:
+
+foo::foo()
+{
+  // Implement the constructor
+}
+
+void foo::bar()
+{
+  // Implement bar
+}
+This is because they are being defined outside the class. If you had not put the foo:: qualification on the names, you would be defining some new functions in the global scope, rather than as members of foo. For example, this is entirely different bar:
+
+void bar()
+{
+  // Implement different bar
+}
